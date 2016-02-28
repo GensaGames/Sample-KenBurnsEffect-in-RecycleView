@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/adapter_main_height"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <example.genka.recycleviewkenburnview.view.KenBurnsView
+                android:id="@+id/image_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/nature_photo5" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Test Text"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/adapter_text_descrip"
+            android:id="@+id/relativeLayout"
+            android:layout_alignParentBottom="true"
+            android:background="#96679795"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/descip_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="2"
+                android:text="Test Text"
+                android:textColor="#e0e1e1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="80dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:src="@android:drawable/ic_menu_week"
+                android:tint="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+
